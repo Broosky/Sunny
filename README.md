@@ -21,7 +21,7 @@ An outdoor regulated and adjustable DC power source, built to charge my phone or
 
 - Initial release.
 
-## 🔹 Key Features
+## 🔹 Features
 
 - Adjustable voltage output with up to 3A (fused at 1A) for a broad range of applications.
 - Displays power in/power out and ambient/internal temperatures.
