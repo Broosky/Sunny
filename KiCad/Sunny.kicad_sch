@@ -1,9 +1,9 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "834caefc-6a03-4a48-855b-cbca8a8506ee")
-	(paper "A4")
+	(paper "USLetter")
 	(title_block
 		(title "Sunny")
 		(date "2026-03-13")
@@ -18,8 +18,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at -5.08 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -29,6 +33,8 @@
 			)
 			(property "Value" "USB_A"
 				(at -5.08 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -38,47 +44,57 @@
 			)
 			(property "Footprint" ""
 				(at 3.81 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 3.81 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "USB Type A connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector USB"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "USB*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "USB_A_0_1"
@@ -242,42 +258,6 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -2.54 -10.16 90)
-					(length 2.54)
-					(name "Shield"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 7.62 5.08 180)
 					(length 2.54)
@@ -289,24 +269,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -332,6 +294,60 @@
 						)
 					)
 				)
+				(pin bidirectional line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -343,8 +359,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -353,6 +373,8 @@
 			)
 			(property "Value" "Conn_02x01"
 				(at 1.27 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -361,47 +383,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_2x??_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_02x01_1_1"
@@ -481,8 +513,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -7.366 -11.684 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -491,6 +527,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -499,24 +537,30 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "LM2596S Buck Converter Module"
 				(at -7.366 0.254 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -616,8 +660,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -626,6 +674,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -634,29 +684,35 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Power Monitor_0_1"
@@ -812,8 +868,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "F"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -822,6 +882,8 @@
 			)
 			(property "Value" "Fuse"
 				(at -1.905 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -830,47 +892,57 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Fuse"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "fuse"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "*Fuse*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Fuse_0_1"
@@ -902,7 +974,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -920,7 +992,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -949,8 +1021,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SC"
 				(at 2.54 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -960,6 +1036,8 @@
 			)
 			(property "Value" "Solar_Cells"
 				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -969,38 +1047,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 1.524 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 1.524 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Multiple solar cells"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "solar cell"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Solar_Cells_0_1"
@@ -1243,8 +1329,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TH"
 				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1253,6 +1343,8 @@
 			)
 			(property "Value" "Thermistor_NTC"
 				(at 3.175 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1261,47 +1353,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Temperature dependent resistor, negative temperature coefficient"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "thermistor NTC resistor sensor RTD"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_* RV_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Thermistor_NTC_0_1"
@@ -1454,7 +1556,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1472,7 +1574,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1501,8 +1603,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1511,6 +1617,8 @@
 			)
 			(property "Value" "1N5819"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1519,47 +1627,57 @@
 			)
 			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "D*DO?41*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "1N5819_0_1"
@@ -1643,7 +1761,7 @@
 	)
 	(text "BLK"
 		(exclude_from_sim no)
-		(at 98.806 82.804 0)
+		(at 97.536 82.804 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1653,7 +1771,7 @@
 	)
 	(text "RED"
 		(exclude_from_sim no)
-		(at 131.572 82.55 0)
+		(at 130.302 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1663,7 +1781,7 @@
 	)
 	(text "VOUT: 5V5 (Range: 1V2-37VDC) 3A"
 		(exclude_from_sim no)
-		(at 152.4 110.49 0)
+		(at 151.13 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1673,7 +1791,7 @@
 	)
 	(text "RED"
 		(exclude_from_sim no)
-		(at 202.438 82.55 0)
+		(at 201.168 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1683,7 +1801,7 @@
 	)
 	(text "BLK"
 		(exclude_from_sim no)
-		(at 170.18 82.55 0)
+		(at 168.91 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1692,50 +1810,50 @@
 		(uuid "ffa8b9d5-4aa1-4600-bd5a-777a26543c51")
 	)
 	(junction
-		(at 101.6 101.6)
+		(at 100.33 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b7cfdb4-3b40-4fbf-b0e8-83ffb8b4e072")
 	)
 	(junction
-		(at 172.72 78.74)
+		(at 171.45 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1b7d4aac-aa77-455c-82c4-c8d2f901a47b")
 	)
 	(junction
-		(at 101.6 78.74)
+		(at 100.33 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a5b0933-db26-43a6-873e-af8ae580bd83")
 	)
 	(junction
-		(at 102.87 83.82)
+		(at 101.6 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6569e8fa-e80e-489a-93e4-7536af5d63a0")
 	)
 	(junction
-		(at 172.72 101.6)
+		(at 171.45 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a24a6aad-7416-4d5a-ae43-9d544254d010")
 	)
 	(junction
-		(at 175.26 81.28)
+		(at 173.99 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a30b95b7-53f9-4317-8679-4fe566ac3619")
 	)
 	(junction
-		(at 213.36 83.82)
+		(at 212.09 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fde0763d-6324-460e-a6b9-4418a7e9bc02")
 	)
 	(wire
 		(pts
-			(xy 132.08 105.41) (xy 133.35 105.41)
+			(xy 130.81 105.41) (xy 132.08 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1745,7 +1863,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 105.41) (xy 173.99 81.28)
+			(xy 172.72 105.41) (xy 172.72 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1755,7 +1873,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 101.6) (xy 172.72 78.74)
+			(xy 171.45 101.6) (xy 171.45 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1765,7 +1883,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 72.39) (xy 201.93 78.74)
+			(xy 200.66 72.39) (xy 200.66 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1775,7 +1893,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 72.39) (xy 130.81 78.74)
+			(xy 129.54 72.39) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1785,7 +1903,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 83.82) (xy 213.36 86.36)
+			(xy 212.09 83.82) (xy 212.09 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1795,7 +1913,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 101.6) (xy 101.6 101.6)
+			(xy 97.79 101.6) (xy 100.33 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1805,7 +1923,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 83.82) (xy 102.87 81.28)
+			(xy 101.6 83.82) (xy 101.6 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1815,7 +1933,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 101.6) (xy 172.72 101.6)
+			(xy 170.18 101.6) (xy 171.45 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1825,7 +1943,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 97.79) (xy 201.93 97.79)
+			(xy 190.5 97.79) (xy 200.66 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1835,7 +1953,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 78.74) (xy 105.41 78.74)
+			(xy 100.33 78.74) (xy 104.14 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1845,7 +1963,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 97.79) (xy 130.81 86.36)
+			(xy 129.54 97.79) (xy 129.54 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1855,7 +1973,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 78.74) (xy 130.81 78.74)
+			(xy 128.27 78.74) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1865,7 +1983,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 83.82) (xy 213.36 83.82)
+			(xy 199.39 83.82) (xy 212.09 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1875,7 +1993,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 81.28) (xy 175.26 83.82)
+			(xy 173.99 81.28) (xy 173.99 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1885,7 +2003,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 86.36) (xy 129.54 86.36)
+			(xy 129.54 86.36) (xy 128.27 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1895,7 +2013,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 101.6) (xy 82.55 101.6)
+			(xy 80.01 101.6) (xy 81.28 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1905,7 +2023,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 86.36) (xy 104.14 86.36)
+			(xy 104.14 86.36) (xy 102.87 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1915,7 +2033,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 86.36) (xy 104.14 97.79)
+			(xy 102.87 86.36) (xy 102.87 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1925,7 +2043,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 81.28) (xy 176.53 81.28)
+			(xy 173.99 81.28) (xy 175.26 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1935,7 +2053,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 81.28) (xy 175.26 81.28)
+			(xy 172.72 81.28) (xy 173.99 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1945,7 +2063,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 83.82) (xy 132.08 83.82)
+			(xy 128.27 83.82) (xy 130.81 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1955,7 +2073,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 101.6) (xy 91.44 101.6)
+			(xy 88.9 101.6) (xy 90.17 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1965,7 +2083,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 101.6) (xy 205.74 101.6)
+			(xy 171.45 101.6) (xy 204.47 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1975,7 +2093,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 78.74) (xy 101.6 72.39)
+			(xy 100.33 78.74) (xy 100.33 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1985,7 +2103,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 101.6) (xy 68.58 101.6)
+			(xy 49.53 101.6) (xy 67.31 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1995,7 +2113,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 86.36) (xy 200.66 86.36)
+			(xy 200.66 86.36) (xy 199.39 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2005,7 +2123,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 78.74) (xy 172.72 72.39)
+			(xy 171.45 78.74) (xy 171.45 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2015,7 +2133,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 105.41) (xy 173.99 105.41)
+			(xy 170.18 105.41) (xy 172.72 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2025,7 +2143,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 81.28) (xy 105.41 81.28)
+			(xy 101.6 81.28) (xy 104.14 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2035,7 +2153,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 111.76) (xy 102.87 111.76)
+			(xy 80.01 111.76) (xy 101.6 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2045,7 +2163,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 78.74) (xy 200.66 78.74)
+			(xy 200.66 78.74) (xy 199.39 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2055,7 +2173,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 86.36) (xy 175.26 97.79)
+			(xy 173.99 86.36) (xy 173.99 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2065,7 +2183,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 97.79) (xy 201.93 86.36)
+			(xy 200.66 97.79) (xy 200.66 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2075,7 +2193,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 97.79) (xy 113.03 97.79)
+			(xy 102.87 97.79) (xy 111.76 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2085,7 +2203,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 83.82) (xy 132.08 105.41)
+			(xy 130.81 83.82) (xy 130.81 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2095,7 +2213,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 78.74) (xy 176.53 78.74)
+			(xy 171.45 78.74) (xy 175.26 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2105,7 +2223,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 72.39) (xy 201.93 72.39)
+			(xy 171.45 72.39) (xy 200.66 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2115,7 +2233,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 97.79) (xy 184.15 97.79)
+			(xy 173.99 97.79) (xy 182.88 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2125,7 +2243,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 97.79) (xy 130.81 97.79)
+			(xy 119.38 97.79) (xy 129.54 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2135,7 +2253,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 72.39) (xy 130.81 72.39)
+			(xy 100.33 72.39) (xy 129.54 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2145,7 +2263,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 86.36) (xy 175.26 86.36)
+			(xy 175.26 86.36) (xy 173.99 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2155,7 +2273,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 83.82) (xy 176.53 83.82)
+			(xy 173.99 83.82) (xy 175.26 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2165,7 +2283,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 83.82) (xy 215.9 86.36)
+			(xy 214.63 83.82) (xy 214.63 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2175,7 +2293,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 83.82) (xy 105.41 83.82)
+			(xy 101.6 83.82) (xy 104.14 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2185,7 +2303,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 101.6) (xy 133.35 101.6)
+			(xy 100.33 101.6) (xy 132.08 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2195,7 +2313,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 101.6) (xy 101.6 78.74)
+			(xy 100.33 101.6) (xy 100.33 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2205,7 +2323,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 83.82) (xy 102.87 111.76)
+			(xy 101.6 83.82) (xy 101.6 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2215,7 +2333,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 111.76) (xy 68.58 111.76)
+			(xy 49.53 111.76) (xy 67.31 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2225,7 +2343,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 83.82) (xy 215.9 83.82)
+			(xy 212.09 83.82) (xy 214.63 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2235,16 +2353,20 @@
 	)
 	(symbol
 		(lib_id "Diode:1N5819")
-		(at 95.25 101.6 0)
+		(at 93.98 101.6 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b0968c1-3aed-44a4-8a88-9a784afda42e")
 		(property "Reference" "D1"
-			(at 95.5675 95.25 0)
+			(at 94.2975 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2252,7 +2374,9 @@
 			)
 		)
 		(property "Value" "1N5819"
-			(at 95.5675 97.79 0)
+			(at 94.2975 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2260,30 +2384,36 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 95.25 106.045 0)
+			(at 93.98 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
-			(at 95.25 101.6 0)
+			(at 93.98 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
-			(at 95.25 101.6 0)
+			(at 93.98 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2293,7 +2423,7 @@
 			(uuid "eec76434-9224-430e-b941-c34ba47f3404")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "D1")
 					(unit 1)
@@ -2303,15 +2433,19 @@
 	)
 	(symbol
 		(lib_id "Connector:USB_A")
-		(at 213.36 96.52 180)
+		(at 212.09 96.52 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "63622390-1813-497b-bc50-9a8a0cd41f95")
 		(property "Reference" "J5"
-			(at 213.36 109.22 0)
+			(at 212.09 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2319,7 +2453,9 @@
 			)
 		)
 		(property "Value" "USB_A"
-			(at 213.36 106.68 0)
+			(at 212.09 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2327,30 +2463,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 95.25 0)
+			(at 208.28 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 209.55 95.25 0)
+		(property "Datasheet" ""
+			(at 208.28 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "USB Type A connector"
-			(at 213.36 96.52 0)
+			(at 212.09 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2369,7 +2511,7 @@
 			(uuid "7d6852ee-a762-4470-ae11-c06c6998a15c")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "J5")
 					(unit 1)
@@ -2379,55 +2521,67 @@
 	)
 	(symbol
 		(lib_id "Custom:Power Monitor")
-		(at 116.84 73.66 0)
+		(at 115.57 73.66 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a78636a-3d68-4010-9c57-de9a09b46f3c")
 		(property "Reference" "U1"
-			(at 117.348 73.914 0)
+			(at 116.078 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 117.475 73.66 0)
+		(property "Value" ""
+			(at 116.205 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 73.66 0)
+			(at 115.57 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 73.66 0)
+			(at 115.57 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 116.84 73.66 0)
+			(at 115.57 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2452,7 +2606,7 @@
 			(uuid "193e708d-8ee5-4373-8acd-5a18fdcf9eab")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "U1")
 					(unit 1)
@@ -2462,16 +2616,20 @@
 	)
 	(symbol
 		(lib_id "Device:Solar_Cells")
-		(at 50.8 106.68 0)
+		(at 49.53 106.68 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "719bddcc-0504-4a22-91eb-de6a8d2beb17")
 		(property "Reference" "SC1"
-			(at 54.61 104.7749 0)
+			(at 53.34 104.7749 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2638,9 @@
 			)
 		)
 		(property "Value" "Solar Cells"
-			(at 54.61 107.3149 0)
+			(at 53.34 107.3149 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,30 +2649,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 105.156 90)
+			(at 49.53 105.156 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 50.8 105.156 90)
+		(property "Datasheet" ""
+			(at 49.53 105.156 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Multiple solar cells"
-			(at 50.8 106.68 0)
+			(at 49.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2522,7 +2688,7 @@
 			(uuid "c9a0bb36-e49f-4c35-b0c1-e9fa38e13d4c")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "SC1")
 					(unit 1)
@@ -2532,50 +2698,62 @@
 	)
 	(symbol
 		(lib_id "Custom:Buck Converter")
-		(at 160.02 97.79 0)
+		(at 158.75 97.79 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "7be2fc73-a2b8-4610-86e1-984f6cbd46d5")
 		(property "Reference" "U2"
-			(at 152.4 93.98 0)
+			(at 151.13 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 152.4 93.98 0)
+		(property "Value" ""
+			(at 151.13 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 97.79 0)
+			(at 158.75 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 97.79 0)
+			(at 158.75 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "LM2596S Buck Converter Module"
-			(at 152.4 96.52 0)
+			(at 151.13 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,7 +2773,7 @@
 			(uuid "bba1b2b4-324c-4f05-84ba-77a4101efa3c")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "U2")
 					(unit 1)
@@ -2605,55 +2783,67 @@
 	)
 	(symbol
 		(lib_id "Custom:Power Monitor")
-		(at 187.96 73.66 0)
+		(at 186.69 73.66 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "8020f786-dabd-460c-a65f-a1b86290fb20")
 		(property "Reference" "U3"
-			(at 188.468 73.914 0)
+			(at 187.198 73.914 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 188.595 73.66 0)
+		(property "Value" ""
+			(at 187.325 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 73.66 0)
+			(at 186.69 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 73.66 0)
+			(at 186.69 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 187.96 73.66 0)
+			(at 186.69 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2688,16 +2878,20 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 86.36 101.6 90)
+		(at 85.09 101.6 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f7fd236-f539-4fab-a7c6-67ca69fe8b8d")
 		(property "Reference" "F1"
-			(at 86.36 95.25 90)
+			(at 85.09 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2705,7 +2899,9 @@
 			)
 		)
 		(property "Value" "1A"
-			(at 86.36 97.79 90)
+			(at 85.09 97.79 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,30 +2909,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 103.378 90)
+			(at 85.09 103.378 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 86.36 101.6 0)
+		(property "Datasheet" ""
+			(at 85.09 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Fuse"
-			(at 86.36 101.6 0)
+			(at 85.09 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2746,7 +2948,7 @@
 			(uuid "ff89193d-bead-4e4b-9fb0-db8130151133")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "F1")
 					(unit 1)
@@ -2756,16 +2958,20 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x01")
-		(at 73.66 111.76 0)
+		(at 72.39 111.76 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7375aa4-65bc-44c8-aa34-809eee835bbd")
 		(property "Reference" "J2"
-			(at 74.93 105.41 0)
+			(at 73.66 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,7 +2979,9 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 107.95 0)
+			(at 73.66 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,30 +2989,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 111.76 0)
+			(at 72.39 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 73.66 111.76 0)
+		(property "Datasheet" ""
+			(at 72.39 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 73.66 111.76 0)
+			(at 72.39 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2824,15 +3038,19 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor_NTC")
-		(at 187.96 97.79 90)
+		(at 186.69 97.79 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6b985a6-2603-41e4-8d98-e7b473217d24")
 		(property "Reference" "TH2"
-			(at 188.2775 91.44 90)
+			(at 187.0075 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2840,7 +3058,9 @@
 			)
 		)
 		(property "Value" "Regulator 10K"
-			(at 188.2775 93.98 90)
+			(at 187.0075 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,30 +3068,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 97.79 0)
+			(at 185.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 186.69 97.79 0)
+		(property "Datasheet" ""
+			(at 185.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 187.96 97.79 0)
+			(at 186.69 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2881,7 +3107,7 @@
 			(uuid "53f7b011-46ab-41c4-bcfe-d0ddc11adc07")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "TH2")
 					(unit 1)
@@ -2891,15 +3117,19 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor_NTC")
-		(at 116.84 97.79 90)
+		(at 115.57 97.79 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "eea9094d-acb6-4bfc-aaf2-a3c850dfd6f3")
 		(property "Reference" "TH1"
-			(at 117.1575 91.44 90)
+			(at 115.8875 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2907,7 +3137,9 @@
 			)
 		)
 		(property "Value" "Ambient 10K"
-			(at 117.1575 93.98 90)
+			(at 115.8875 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,30 +3147,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 97.79 0)
+			(at 114.3 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 115.57 97.79 0)
+		(property "Datasheet" ""
+			(at 114.3 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 116.84 97.79 0)
+			(at 115.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2958,16 +3196,20 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x01")
-		(at 73.66 101.6 0)
+		(at 72.39 101.6 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efd2545d-83cc-4088-a371-2a35070e3e93")
 		(property "Reference" "J1"
-			(at 74.93 95.25 0)
+			(at 73.66 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2975,7 +3217,9 @@
 			)
 		)
 		(property "Value" "VIN (7V5-40VDC)"
-			(at 74.93 97.79 0)
+			(at 73.66 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2983,30 +3227,36 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 101.6 0)
+			(at 72.39 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 73.66 101.6 0)
+		(property "Datasheet" ""
+			(at 72.39 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 73.66 101.6 0)
+			(at 72.39 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3016,7 +3266,7 @@
 			(uuid "bcbfb813-6569-43f0-9fab-f2133944e612")
 		)
 		(instances
-			(project ""
+			(project "Sunny"
 				(path "/834caefc-6a03-4a48-855b-cbca8a8506ee"
 					(reference "J1")
 					(unit 1)
